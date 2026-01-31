@@ -32,6 +32,12 @@ Docker/
 
 ## Setup & Run
 
+Before testing the below options, clone the repostiory with:
+
+```bash
+git clone https://github.com/prashanthjaganathan/MLOps_Sandbox.git
+```
+
 ### Option 1: Using docker-compose (Recommended)
 
 ```bash
