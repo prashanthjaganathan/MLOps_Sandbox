@@ -1,2 +1,6 @@
 **/__pycache__/
 **/.pytest_cache/
+**/.env
+Airflow/dags/data/**/*.csv
+Airflow/dags/data/**/*.txt
+Airflow/logs/**
