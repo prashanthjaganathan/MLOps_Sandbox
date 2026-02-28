@@ -2,6 +2,22 @@
 
 An end-to-end **Airflow pipeline** for synthetic satellite telemetry: generate data, preprocess, engineer features, train an anomaly-detection model (Isolation Forest), score data, and produce health reports—all orchestrated by **Apache Airflow**.
 
+
+> **How this differs from `MLOps/Labs/Airflow_Labs/Lab_1`**
+>
+> | | Lab_1 (course lab) | This project (`Airflow/`) |
+> |-|---|---|
+> | **Purpose** | Introduces DAGs, tasks, and XCom | End-to-end Airflow pipeline for synthetic satellite telemetry monitoring|
+> | **Domain** | Credit-card customer data (KMeans clustering) | Synthetic satellite telemetry (anomaly detection) |
+> | **ML model** | KMeans + elbow method | Isolation Forest (unsupervised anomaly detection) |
+> | **Data** | Static CSV files (`file.csv`, `test.csv`) | Synthetically generated on each run (`generate_data.py`) |
+> | **DAG structure** | Single linear DAG (4 tasks) | Two DAGs: a full ML pipeline (7 tasks) + a simpler stats-only DAG |
+> | **Infrastructure** | Bare Airflow (manual setup via `setup.sh`) | Docker Compose (Airflow + Postgres, ready to run) |
+> | **Modules** | Single `src/lab.py` helper | Dedicated modules: `generate_data`, `preprocess`, `features`, `train`, `score` |
+> | **Outputs** | Saved model file (`model.sav`) | Scored CSV + human-readable health report |
+>
+> In short: Lab_1 is a minimal intro to Airflow concepts; this project applies those concepts to a realistic, containerised ML use-case with richer feature engineering and reporting.
+
 ---
 
 ## 📋 Overview
