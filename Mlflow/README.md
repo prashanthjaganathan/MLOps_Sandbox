@@ -21,7 +21,7 @@ Lab 2 follows the classic MLflow flow: train → log model → register → serv
 
 ## Results
 
-![MLflow evaluation runs](Mlflow UI.png)
+![MLflow evaluation runs](Mlflow_UI.png)
 
 ---
 
