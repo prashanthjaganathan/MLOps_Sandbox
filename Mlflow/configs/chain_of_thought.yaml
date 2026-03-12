@@ -1,0 +1,21 @@
+strategy: chain_of_thought
+description: "Chain-of-thought reasoning; ends with 'Final Answer: X'."
+
+system_prompt: |
+  You are a medical expert taking a USMLE exam. Think through each
+  question step by step before giving your final answer. End your
+  response with: Final Answer: X
+  where X is A, B, C, or D.
+
+user_template: |
+  Question: {question}
+  A) {option_a}
+  B) {option_b}
+  C) {option_c}
+  D) {option_d}
+  Think step by step:
+
+temperature: 0.3
+max_tokens: 4000
+top_p: 1.0
+

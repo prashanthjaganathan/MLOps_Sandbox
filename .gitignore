@@ -1,6 +1,18 @@
 **/__pycache__/
 **/.pytest_cache/
 **/.env
+**.venv/
 Airflow/dags/data/**/*.csv
 Airflow/dags/data/**/*.txt
 Airflow/logs/**
+
+# Local Debugging Files
+merge_files.py
+merged_output.txt
+**/artifacts/
+**/mlruns/
+**/mlflow.db
+**/.vscode/
+**/medqa_eval_10.jsonl
+**/analysis_artifacts/
+**/registry_artifacts/

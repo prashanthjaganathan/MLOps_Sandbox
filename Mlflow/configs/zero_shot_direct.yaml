@@ -1,0 +1,20 @@
+strategy: zero_shot_direct
+description: Zero-shot direct answer; respond with only the letter.
+
+system_prompt: |
+  You are a medical expert. Answer the following USMLE-style question.
+  Reply with ONLY the letter (A, B, C, or D) of the correct answer.
+
+user_template: |
+  Question: {question}
+  Options:
+  A) {option_a}
+  B) {option_b}
+  C) {option_c}
+  D) {option_d}
+  Answer:
+
+temperature: 0.0
+max_tokens: 4000
+top_p: 1.0
+
