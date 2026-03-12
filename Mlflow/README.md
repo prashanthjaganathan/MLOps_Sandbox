@@ -112,6 +112,9 @@ MedQA_Bench/
 ## 7. Environment Setup
 
 ```bash
+git clone https://github.com/prashanthjaganathan/MLOps_Sandbox
+cd Mlflow
+
 python -m venv .venv
 source .venv/bin/activate
 
@@ -121,10 +124,9 @@ pip install -r requirements.txt
 Required environment variables (set before running any scripts):
 
 ```bash
-export OPENAI_API_KEY="..."
-export ANTHROPIC_API_KEY="..."
-export GOOGLE_API_KEY="..."       # from Google AI Studio
-export GROQ_API_KEY="..."
+cp .env.example .env
+
+# Add your GROQ_API_KEY and GEMINI_API_KEY
 ```
 
 ---
@@ -134,7 +136,6 @@ export GROQ_API_KEY="..."
 1. **Prepare data**
 
    ```bash
-   cd MedQA_Bench
    python -m data.prepare_dataset
    ```
 
