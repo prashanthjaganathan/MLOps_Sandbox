@@ -1,6 +1,6 @@
 # Terraform — FastAPI on Google Cloud Run (plus VPC + IAM)
 
-## Comparsion with `[MlOps` Labs](https://github.com/raminmohammadi/MLOps/tree/main/Labs/Terraform_Labs/GCP/Lab1_Beginner)
+## Comparsion with [MLOps Repo Lab](https://github.com/raminmohammadi/MLOps/tree/main/Labs/Terraform_Labs/GCP/Lab1_Beginner)
 
 - the course lab is the **intro** track: fewer resources, usually **local state**, focused on Terraform workflow on GCP.
 - **This folder** goes further: **Cloud Run v2** + **Docker image** you build/push, **custom VPC**, **IAM** (service account + scoped `run.invoker`), split across multiple `.tf` files, and optional **GCS remote state**—closer to a small **MLOps** deploy, with the operational gotchas called out in this README.
